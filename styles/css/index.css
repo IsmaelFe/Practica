@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;700&display=swap");
 * {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Tight", sans-serif;
 }
 
 .main-container {
@@ -26,16 +26,18 @@
   padding: 0px;
 }
 .first-container .bar-nav ul li a {
+  font-size: 17px;
   text-decoration: none;
   color: black;
   cursor: pointer;
 }
 .first-container .bar-nav ul li a:hover {
-  color: orange;
+  color: #F14738;
 }
 
 .second-container {
   display: grid;
+  gap: 20px;
   grid-template-columns: repeat(3, 1fr);
 }
 .second-container .container-img {
@@ -48,12 +50,60 @@
   grid-column: 1/2;
   grid-row: 2/3;
 }
+.second-container .container-tittle p {
+  font-weight: 900;
+  font-size: 3.5em;
+  margin: 0px;
+  word-spacing: 10px;
+}
 .second-container .container-button {
   grid-column: 2/3;
   grid-row: 2/3;
 }
+.second-container .container-button p {
+  line-height: 1.5;
+  margin-top: 5px;
+  font-size: 19px;
+}
+.second-container .container-button button {
+  border: none;
+  padding: 15px;
+  letter-spacing: 3px;
+  width: 200px;
+  background-color: #F14738;
+  color: white;
+  font-weight: bold;
+  margin-top: 55px;
+}
+.second-container .container-button button:hover {
+  background-color: #0F121B;
+}
 .second-container .container-news {
+  display: flex;
+  flex-direction: column;
   grid-row: 1/3;
+  background-color: #0F121B;
+}
+.second-container .container-news .bar {
+  height: 1px;
+  width: 85%;
+  border-top: solid grey 1px;
+}
+.second-container .container-news .tittle {
+  margin: 20px 25px;
+  font-size: 3em;
+  font-weight: 700;
+  color: #F3A538;
+}
+.second-container .container-news div {
+  margin: 20px 20px;
+  margin-left: 25px;
+  color: white;
+}
+.second-container .container-news div h3 {
+  margin: 20px 0px;
+  font-size: 25px;
+  word-spacing: 6px;
 }
 
 /*# sourceMappingURL=index.css.map */
