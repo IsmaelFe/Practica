@@ -14,6 +14,9 @@
   align-items: center;
   padding: 40px 0;
 }
+.first-container .bar-nav .mobile-menu {
+  display: none;
+}
 .first-container .bar-nav ul {
   display: flex;
   gap: 50px;
@@ -110,7 +113,6 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 80px;
-  min-width: 300px;
   justify-content: space-between;
   width: 100%;
 }
@@ -125,8 +127,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 190px;
-  min-width: 200px;
 }
 .third-container .third-container-0 .container-p img {
   max-width: 100%;
@@ -148,6 +148,29 @@
 }
 
 @media (max-width: 500px) {
+  .main-container {
+    margin: auto;
+    width: 90%;
+  }
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .mobile-menu div {
+    width: 50px;
+    border: solid black 1px;
+  }
+  .mobile-menu {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .mobile-menu div {
+    border: solid black 2px;
+  }
   .bar-nav {
     display: none;
   }
@@ -156,6 +179,17 @@
     width: 100%;
     gap: 20px;
     grid-template-areas: "img-area" "tittle-area" "p-area" "news-area";
+  }
+  .third-container .third-container-0 {
+    gap: 5px;
+  }
+  .third-container .third-container-0 h4 {
+    font-size: 10px;
+    margin-top: 0px;
+  }
+  .third-container .third-container-0 p {
+    font-size: 10px;
+    margin-top: 0px;
   }
 }
 

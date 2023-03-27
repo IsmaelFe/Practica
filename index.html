@@ -12,10 +12,11 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <script src="./javascript/index.js"></script>
 
     <title>Frontend Mentor | News homepage</title>
   </head>
-  <body>
+  <body onresize="actualSize();">
     <div class="main-container">
       <div class="first-container">
         <svg width="65" height="40" xmlns="http://www.w3.org/2000/svg">
@@ -25,7 +26,17 @@
           />
         </svg>
 
+        <div class="mobile-menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
         <nav class="bar-nav">
+          <div class="button-exit">
+            <div class="bar-1"></div>
+            <div class="bar-2"></div>
+          </div>
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">New</a></li>
@@ -41,6 +52,7 @@
           <img
             src="./assets/images/image-web-3-desktop.jpg"
             alt="imagen-retro"
+            id="main-pic"
           />
         </div>
         <div class="container-tittle">
