@@ -147,6 +147,10 @@
   margin-bottom: 0px;
 }
 
+.attribution {
+  margin: 20px;
+}
+
 @media (max-width: 500px) {
   .main-container {
     margin: auto;
