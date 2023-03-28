@@ -12,6 +12,7 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <script src="./javascript/nav.js"></script>
     <script src="./javascript/index.js"></script>
 
     <title>Frontend Mentor | News homepage</title>
@@ -26,14 +27,14 @@
           />
         </svg>
 
-        <div class="mobile-menu">
+        <div class="mobile-menu" id="open" onclick="cambioClassP()">
           <div></div>
           <div></div>
           <div></div>
         </div>
 
-        <nav class="bar-nav">
-          <div class="button-exit">
+        <nav class="bar-nav" id="nav">
+          <div class="button-exit" id="exit" onclick="cambioClassS()">
             <div class="bar-1"></div>
             <div class="bar-2"></div>
           </div>
@@ -125,7 +126,7 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="https://github.com/IsmaelFe">Abner Sul</a>.
       </div>
     </div>
   </body>
